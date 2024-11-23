@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "138078167356",
+    "project_id": "monetizationapp-d1b3f",
+    "storage_bucket": "monetizationapp-d1b3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138078167356:android:f8ab599a10a2ac82157e39",
+        "android_client_info": {
+          "package_name": "com.example.monetizationapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk7b_5B3pc_BZE3_1af0tW64vFYyBMypM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138078167356:android:c665a6ea6fa62987157e39",
+        "android_client_info": {
+          "package_name": "com.example.taskmanagerapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk7b_5B3pc_BZE3_1af0tW64vFYyBMypM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

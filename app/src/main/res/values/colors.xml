@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="light_green">#A8D8F0</color> <!-- Light Blueish (replacing light green) -->
+    <color name="light_blue">#D0E8F2</color> <!-- Light Blue -->
+    <color name="primary_color">#A8D8F0</color> <!-- Primary color (light blueish) -->
+    <color name="primary_dark_color">#5FA3D3</color> <!-- Darker shade of blue -->
+    <color name="accent_color">#00BFFF</color> <!-- Accent color (vibrant blue) -->
+    <color name="background_color">#F7FBFC</color> <!-- Background color -->
+    <color name="text_color">#333333</color> <!-- Text color -->
+    <color name="darker_gray">#a9a9a9</color>
+    <color name="chip_background">#FFFFFF</color> <!-- Default background color -->
+    <color name="chip_selected_background">#7FC7D0</color> <!-- Selected background color -->
+    <color name="holo_blue">#0000ff</color>
+    <color name="pink">#E69CB5</color>
+</resources>

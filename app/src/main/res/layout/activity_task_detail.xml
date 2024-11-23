@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+            <TextView
+                android:id="@+id/taskDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Details"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <!-- Horizontal Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/primary_dark_color"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="@drawable/card_border"
+            android:elevation="4dp"
+            android:layout_margin="6dp">
+
+            <!-- Task Title Label and Value -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tasktitleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task Title : "
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/holo_blue" />
+
+                <TextView
+                    android:id="@+id/textViewTaskTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task Title"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/tasktitleLabel"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+
+            <!-- Task Title Label and Value -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/taskDescLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task Description : "
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/holo_blue" />
+
+                <TextView
+                    android:id="@+id/textViewTaskDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task Description"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/taskDescLabel"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+
+            <!-- Due Date Label and Value -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/duedateLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Due Date : "
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/holo_blue" />
+
+                <TextView
+                    android:id="@+id/textViewTaskDueDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Due Date: MM/DD/YYYY"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/duedateLabel"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+
+            <!-- Task Priority Label and Value -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/taskpriorityLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task Priority : "
+                    android:textColor="@color/holo_blue"
+                    android:textStyle="bold"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/textViewTaskPriority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Priority: High/Medium/Low"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/taskpriorityLabel"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+
+            <!-- Edit Button -->
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Task"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="40dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- FloatingActionButton at the bottom -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/primary_dark_color"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+</RelativeLayout>

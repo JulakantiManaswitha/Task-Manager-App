@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_arrow_back_ios_new_24" />
+
+            <TextView
+                android:id="@+id/addedittaskHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add / Edit Task"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <!-- Horizontal Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/primary_dark_color"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="@drawable/card_border"
+            android:elevation="4dp"
+            android:layout_margin="6dp">
+
+            <TextView
+                android:id="@+id/tasktitleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Title : "
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/tasktitleInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task title"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/taskdescLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Description : "
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/taskdescInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task Description"
+                android:inputType="none"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/taskpriorityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Priority : "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerTaskPriority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Priority : "
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/duedateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due Date : "
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/duedateInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Due date"
+                android:inputType="none|date"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/selectCategoryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category : "
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerTaskCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Category : "
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Task"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="12dp" />
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Task"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_button"
+                android:layout_marginTop="12dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
